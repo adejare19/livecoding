@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width:80%;
+    margin:auto;
+    /* background-color: red; */
+}
+.navbar-nav{
+    justify-content: ;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 32px;
+    box-shadow: 1px 2px 3px 4px rgb(245, 240, 240);
+    border-top: 5px solid #001f4d;
+}
+
+.dropdown-toggle.d-md-none {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .dropdown-toggle.d-md-none {
+        display: block;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 10em;
+    padding-top: 1em;
+}
+
+.left {
+    max-width: 30%;
+    margin-left: 30px;
+}
+
+.left h1 {
+    color: #001f4d;
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.left p {
+    color: #555;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.button {
+    background-color: #001f4d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.line {
+    border-bottom: 2px solid #001f4d;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.line a {
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b5998;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.social-icons a.twitter {
+    background-color: #00aced;
+}
+
+.social-icons a.linkedin {
+    background-color: #007bb5;
+}
+
+.right img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 2em;
+        padding-top: 1em;
+        text-align: left;
+    }
+
+    butons {
+        padding: 1px;
+    }
+
+    .left {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .left h1 {
+        font-size: 1.1rem;
+    }
+
+    .left p {
+        font-size: 0.9rem;
+    }
+
+    .right img {
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        display: none;
+
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+}
+
+.start {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #02265c;
+    margin: 20px 180px;
+}
+
+.programs {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 20px;
+    margin: 0 10%;
+}
+
+.program-card {
+    flex: 1;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    padding: 15px;
+}
+
+.program-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    filter: saturate(0%);
+}
+
+.program-card h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #001f4d;
+    margin: 15px 0;
+    line-height: 2rem;
+}
+
+.program-card p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 3%;
+}
+
+
+@media (max-width: 768px) {
+    .programs {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .program-card {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .program-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .program-card p {
+        font-size: 0.85rem;
+    }
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 20px;
+    margin: 0 10%;
+}
+
+.course-card {
+    flex: 1;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.course-card h3 {
+    font-size: 1.2rem;
+    color: #001f4d;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 5px;
+}
+
+.course-card p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.course-card span {
+    font-weight: bold;
+    color: #001f4d
+}
+.container {
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #001f4d;
+    margin-bottom: 30px;
+  }
+
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .program-card {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .program-card h2 {
+    font-size: 1.2rem;
+    color: #001f4d;
+    margin-bottom: 10px;
+  }
+
+  .program-card p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  .program-card p span {
+    font-weight: bold;
+    
+  }
+
+  @media (max-width: 1024px) {
+    .program-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .program-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .everything{
+    position: relative;
+    left: 200px;
+}
+/* .parent{
+    border: thin solid rgb(244, 216, 216) ;
+    width: 400px;
+    display: flex;
+    gap: 70px;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: rgba(124, 203, 237, 0.79);
+    align-items: center;
+    justify-content: space-around;  
+    position: relative;
+    top: 50px;
+    box-shadow: 0px 20px 35px rgba(105, 216, 71, 0.888);
+}
+
+.parent2{
+    border: thin solid rgb(244, 216, 216) ;
+    width: 400px;
+    display: flex;
+    gap: 70px;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: #edef80bf;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+    box-shadow: 0px 20px 35px rgba(105, 216, 71, 0.888);
+
+}
+img{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    border-radius: 30px;
+}
+
+.div2{
+    border: thin solid rgb(244, 216, 216);
+    width: 400px;
+    height: 700px;
+    gap: 70px;
+    padding: 40px;
+    border-radius: 30px;
+    justify-content: center;
+    justify-content: space-around;  
+    background-color: rgba(238, 255, 0, 0.699);
+    position: relative;
+    bottom: 50px;
+    box-shadow: 0 18px 25px rgba(162, 222, 143, 0.2);
+
+}
+
+.div4{
+    border: thin solid rgb(244, 216, 216);
+    width: 400px;
+    gap: 70px;
+    padding: 40px;
+    border-radius: 30px;
+    justify-content: center;
+    justify-content: space-around;  
+    background-color: plum;
+    position: relative;
+    bottom: 100px;
+    box-shadow: 0px 20px 35px rgba(105, 216, 71, 0.888);
+} */
